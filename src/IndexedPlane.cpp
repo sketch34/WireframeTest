@@ -50,7 +50,8 @@ void IndexedPlane::makeIndexedPlane(int width, int height, ofVec3f* vertices, ui
             ofVec3f *v = vertices + index;
             v->x = (float) x;
             v->y = (float) y;
-            printf("%d: %f, %f\n", index, v->x, v->y);
+            v->z = 0.f;
+            printf("%d: %f, %f, %f\n", index, v->x, v->y, v->z);
         }
     }
     
